@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: converter-configmap
+data:
+  PORT: "5052"
+  RABBIT_SERVICE: "rabbitmq"
+  VIDEOS_DB_URI: "mongodb://host.minikube.internal:27017/videosDB"
+  MP3_DB_URI: "mongodb://host.minikube.internal:27017/mp3DB"
+  AMQP_URL: "amqp://host.minikube.internal:5672" 
+  VIDEO_QUEUE: "videoQueue"
+  MP3_QUEUE: "mp3Queue"
